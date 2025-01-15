@@ -36,7 +36,9 @@ function pariODispari (numero){
 
 let risultato = pariODispari(somma)
 
-if (risultato==playerScegliNumero){
+if (computerScegliNumero==playerScegliNumero){
+    console.log("Pareggio")
+}else if (risultato==playerScegliNumero){
     console.log("Player ha vinto")
 }else{
     console.log("Computer ha vinto")
