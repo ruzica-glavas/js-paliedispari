@@ -10,7 +10,7 @@ let playerScegliNumero= parseInt(prompt("Player scegli un numero da 1 a 5"))
 
 
 function numeriRandom(min,max){
-    let random= Math.floor(Math.random() * (max-min+1))+ min;
+    let random= Math.floor(Math.random() * (max-min)+1)+ min;
     return random
 }
 
@@ -31,14 +31,15 @@ function pariODispari (numero){
     }else{
         return console.log(`Il numero scelto da Player é: ${playerScegliNumero}. Da computer é: ${computerScegliNumero}. Quindi é dispari`);
     }  
-   
+
+
+
 }
 
 let risultato = pariODispari(somma)
 
-if (computerScegliNumero==playerScegliNumero){
-    console.log("Pareggio")
-}else if (risultato==playerScegliNumero){
+
+if (risultato==playerScegliNumero){
     console.log("Player ha vinto")
 }else{
     console.log("Computer ha vinto")
