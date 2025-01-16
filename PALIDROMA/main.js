@@ -2,7 +2,7 @@
 
 let scegliUnaParola= prompt ("Digita una parola");
 
-console.log(`La parola scelta é: ${scegliUnaParola}`)
+console.log(`La parola scelta é: ${scegliUnaParola.toLowerCase()}`)
 
 
 function reverseString(parolaDaControllare){
@@ -15,7 +15,7 @@ function reverseString(parolaDaControllare){
 }
 
     //Risultato della parola al contrario
-console.log(`La parola al contrario é: ${reverseString(scegliUnaParola)}`)
+console.log(`La parola al contrario é: ${reverseString(scegliUnaParola.toLowerCase())}`)
 
     //Verificare le condizioni di quando una parola é polidroma e di quando non lo é
 
